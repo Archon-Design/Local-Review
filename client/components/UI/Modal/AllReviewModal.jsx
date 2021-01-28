@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import ReviewItem from '../../../components/ReviewItem.jsx';
 import ModalClose from '../../Logos/ModalClose.jsx'
 
-// git clone - b service https://github.com/Archon-Design/Local-Review.git
-
 const StyledReviews = styled.div`
     border-radius: 8px;
     padding: 15px;
@@ -183,7 +181,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'community' ? community.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="170px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -191,7 +189,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'dogOwners' ? dogOwners.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="170px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -199,7 +197,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'parents' ? parents.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="170px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -207,7 +205,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'commute' ? commute.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="170px" review={review} />
                     </div>
                   )
                 }) : null}
