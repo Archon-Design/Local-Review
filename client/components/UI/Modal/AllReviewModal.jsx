@@ -4,11 +4,14 @@ import styled from 'styled-components';
 import ReviewItem from '../../../components/ReviewItem.jsx';
 import ModalClose from '../../Logos/ModalClose.jsx'
 
+// git clone - b service https://github.com/Archon-Design/Local-Review.git
+
 const StyledReviews = styled.div`
     border-radius: 8px;
-    padding: 32px;
-    width: 1184px;
+    padding: 15px;
+    width: 100%;
     height: 624px;
+    margin: auto;
     overflow: scroll;
     @media(max-width: 1000px) {
       width: 700px;
@@ -108,8 +111,8 @@ const Backdrop = (props) => (
 const StyledModal = styled.div`
   position: fixed;
   z-index: 7;
-  top: 8%;
-  left: 11%;
+  top: 10%;
+  left: 10%;
   box-sizing: border-box;
    @media (max-width: 800px) {
     top: 3%;
@@ -172,7 +175,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'all' ? reviews.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="170px" review={review} />
                     </div>
                   )
                 }) : null}
