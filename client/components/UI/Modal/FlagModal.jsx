@@ -89,7 +89,7 @@ const StyledModal = styled.div`
   position: fixed;
   z-index: 7;
   top: 12%;
-  left: 30%;
+  left: 28%;
   box-sizing: border-box;
    /* @media (min-width: 600px) {
    left: calc(25%% - 250px);

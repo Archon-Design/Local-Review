@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import Smily from './Logos/Smily.jsx'
 
 const StyledReview = styled.div`
-  /* width: ${props => props.width ? props.width : '10.2rem'}; */
-  width: ${props => props.width ? props.width : '227px'};
+  width: ${props => props.width ? props.width : '10.2rem'};
+  /* width: ${props => props.width ? props.width : '227px'}; */
   @media(max-width: 800px) {
     width: 28rem;
     margin: 5px;

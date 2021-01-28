@@ -172,7 +172,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'all' ? reviews.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="265px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -180,7 +180,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'community' ? community.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="265px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -188,7 +188,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'dogOwners' ? dogOwners.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="265px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -196,7 +196,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'parents' ? parents.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="265px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
                     </div>
                   )
                 }) : null}
@@ -204,7 +204,7 @@ class AllReviewModal extends React.Component {
                 {this.state.view === 'commute' ? commute.map((review, i) => {
                   return (
                     <div key={i} className="items">
-                      <ReviewItem flag={this.props.showflag} width="265px" review={review} />
+                      <ReviewItem flag={this.props.showflag} width="215px" review={review} />
                     </div>
                   )
                 }) : null}
