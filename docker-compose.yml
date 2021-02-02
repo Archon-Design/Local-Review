@@ -1,10 +1,11 @@
 version: '3'
 services:
  localreview:
-  build: 
+  build:
    context: .
   ports:
    - 3004:3004
+  restart: on-failure
   environment:
    - CONNECTIONSTRING=mongodb://mongo:27017/review
   volumes:
