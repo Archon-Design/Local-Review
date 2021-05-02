@@ -1,6 +1,6 @@
 const request = require('supertest');
 
-const port = 3000;
+const port = 3004;
 
 // reviews routes
 

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon server",
-    "test": "jest --coverage",
+    "test": "jest",
     "watch": "webpack -w",
     "lint": "eslint ./",
     "seed": "node seed.js",
