@@ -1,6 +1,6 @@
 import React from 'react';
 import ReviewItem from '../components/ReviewItem.jsx';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 const sampleReview = {
   _id: 3,
@@ -8,7 +8,7 @@ const sampleReview = {
   thumbnail: 'https://hack-reactor-images.s3-us-west-1.amazonaws.com/people/person-1.jpg',
   resident: false,
   type: 'commute',
-  posted: new Date.now(),
+  posted: Date.now(),
   message: "They have neighborhood potlucks and Every Halloween they have a neighborhood Block party Where everyone can gather and share recipes and other things!!",
   liked: 9
 }
@@ -16,10 +16,9 @@ const sampleReview = {
 describe('<ReviewItem />', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(<ReviewItem flag={true} review={sampleReview} selected={false} color={'#00adbb'} />);
+    wrapper = shallow(<ReviewItem flag={true} review={sampleReview} selected={false} color={'#00adbb'} />);
   });
   it('Review Item component exists', () => {
-    console.log(wrapper.debug());
-    // expect(wrapper.find('ReviewItem__StyledReview')).toExist();
+    expect(wrapper.find('ReviewItem__StyledReview')).toExist();
   });
 });
