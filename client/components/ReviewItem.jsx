@@ -109,17 +109,17 @@ class ReviewItem extends Component {
     return (
       <StyledReview color={this.props.color} width={this.props.width} padding={this.props.padding}>
         <div className="wrapper">
-          <div className="topPart" onClick={() => this.props.selected(id, background)} >
-            <div><img src={this.state.review.thumbnail} alt="" /></div>
+          <div className="topPart" onClick={() => this.props.selected(this.props.review._id, this.props.color)} >
+            <div><img src={this.props.review.thumbnail} alt="" /></div>
             <div>
-              <div className="username">{this.state.review.username}</div>
-              <div className="userInfo">{this.state.review.resident === true ? 'Resident' : 'Visitor'}{' '}
-                • {moment(time).startOf('month').fromNow()}</div>
+              <div className="username">{this.props.review.username}</div>
+              <div className="userInfo">{this.props.review.resident === true ? 'Resident' : 'Visitor'}{' '}
+                • {moment(this.props.review.posted).startOf('month').fromNow()}</div>
             </div>
           </div>
-          <div className="middlePart " onClick={() => this.props.selected(id, background)} >"{this.state.review.message}"</div>
+          <div className="middlePart " onClick={() => this.props.selected(this.props.review._id, this.props.color)} >"{this.props.review.message}"</div>
           <div className="bottomPart">
-            <div className="smilyLogo" onClick={this.smilyToggleHandler}><Smily /><span className="liked">{this.state.liked}</span></div>
+            <div className="smilyLogo" onClick={this.smilyToggleHandler}><Smily /><span className="liked">{this.props.review.liked}</span></div>
             <div className="flag" onClick={this.props.flag}>Flag</div>
           </div>
         </div>
