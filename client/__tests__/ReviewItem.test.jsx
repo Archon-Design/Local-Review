@@ -21,4 +21,7 @@ describe('<ReviewItem />', () => {
   it('Review Item component exists', () => {
     expect(wrapper.find('ReviewItem__StyledReview')).toExist();
   });
+  it('displays username correctly', () => {
+    expect(wrapper.find('.username').text()).toBe('Tony Stark');
+  });
 });

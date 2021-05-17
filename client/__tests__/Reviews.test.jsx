@@ -42,5 +42,5 @@ describe('<Reviews />', () => {
   })
   it('renders on the page', () => {
     expect(wrapper.find('Fragment')).toExist();
-  })
+  });
 });
